@@ -517,7 +517,7 @@ h1, h2, h3, ul, p {
 
 .box {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .box:hover .overlay {
