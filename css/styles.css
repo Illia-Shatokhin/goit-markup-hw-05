@@ -557,7 +557,7 @@ h1, h2, h3, ul, p {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
-    transition: opacity var(--trans), visibility var(--trans);
+    transition: opacity 600ms linear, visibility 600ms linear;
 }
 
 .modal {
@@ -585,6 +585,23 @@ h1, h2, h3, ul, p {
     border-radius: 50%;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color var(--trans);
+}
+
+.modal-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill var(--trans);
+}
+
+.modal-close:hover, .modal-close:focus {
+    background-color: var(--order-hover);
+}
+
+.modal-close:hover .modal-button, .modal-close:focus .modal-button {
+    fill: #FFFFFF;
 }
 
 .is-hidden {
